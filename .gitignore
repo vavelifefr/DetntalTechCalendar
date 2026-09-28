@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.local/
+playwright-report/
+test-results/
+coverage/
+**/build/
+**/.gradle/
+android/app/src/main/assets/public/

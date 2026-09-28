@@ -1,0 +1,48 @@
+{
+  "name": "dental-tech-calendar",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently --kill-others-on-fail -n api,web \"npm:dev:api\" \"npm:dev:web\"",
+    "dev:api": "node apps/api/src/main.ts",
+    "dev:web": "vite --config apps/web/vite.config.ts --host 127.0.0.1",
+    "build": "npm run typecheck && npm run build:web",
+    "build:web": "vite build --config apps/web/vite.config.ts",
+    "android:sync": "npm run build:web && cap sync android",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "vitest run",
+    "test:smoke": "playwright test --config playwright.config.ts",
+    "db:migrate": "node packages/persistence-sqlite/scripts/db.ts migrate",
+    "db:test:reset": "node packages/persistence-sqlite/scripts/db.ts reset",
+    "db:test:seed": "node packages/persistence-sqlite/scripts/db.ts seed",
+    "db:test:export": "node packages/persistence-sqlite/scripts/db.ts export-demo"
+  },
+  "dependencies": {
+    "@capacitor/android": "8.5.2",
+    "@capacitor/core": "8.5.2"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "8.5.2",
+    "@playwright/test": "1.63.0",
+    "@types/better-sqlite3": "9.6.0",
+    "@types/node": "24.13.6",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.1.1",
+    "concurrently": "10.0.5",
+    "typescript": "7.0.2",
+    "vite": "8.3.0",
+    "vitest": "5.0.1"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true
+  }
+}

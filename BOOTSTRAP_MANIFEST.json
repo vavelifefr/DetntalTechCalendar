@@ -1,0 +1,11 @@
+{
+  "project": "Dentel Tech Calendar",
+  "generated": "2026-09-24",
+  "purpose": "LLM-friendly SDD/bootstrap documentation and workflow",
+  "file_count": 38,
+  "notes": [
+    "No production code included",
+    "Open questions are marked in PROJECT_STATE.md",
+    "Unresolved product rules are not silently treated as accepted"
+  ]
+}

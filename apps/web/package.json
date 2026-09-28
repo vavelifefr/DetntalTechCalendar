@@ -1,0 +1,13 @@
+{
+  "name": "@dental-tech/web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@dental-tech/domain": "0.1.0",
+    "@devicekit/devices": "0.2.3",
+    "@devicekit/frame": "0.4.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  }
+}

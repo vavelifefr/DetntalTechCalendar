@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">DentalTechCalendar</string>
+    <string name="title_activity_main">DentalTechCalendar</string>
+    <string name="package_name">com.vave.dentaltechcalendar</string>
+    <string name="custom_url_scheme">com.vave.dentaltechcalendar</string>
+</resources>

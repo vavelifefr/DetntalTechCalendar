@@ -1,0 +1,235 @@
+:root {
+  font-family: Inter, "Segoe UI", sans-serif;
+  color: #17202f;
+  background: #f4f6fa;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.app-shell {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 22px clamp(20px, 5vw, 64px);
+  border-bottom: 1px solid #e3e7ee;
+  background: rgba(255, 255, 255, 0.82);
+}
+
+.app-header h1,
+.preview-caption h2,
+.device-app-header h2,
+.foundation-card p {
+  margin: 0;
+}
+
+.app-header h1 {
+  font-size: 20px;
+  letter-spacing: -0.025em;
+}
+
+.eyebrow,
+.card-label {
+  margin: 0 0 4px;
+  color: #68758b;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.connection-pill {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #d9e1ed;
+  border-radius: 999px;
+  padding: 7px 11px;
+  background: #fff;
+  color: #647087;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.connection-pill--ready {
+  border-color: #c7ead9;
+  background: #effaf4;
+  color: #137647;
+}
+
+.connection-pill--unavailable {
+  border-color: #f2d0cf;
+  background: #fff4f3;
+  color: #a23b37;
+}
+
+.preview-section {
+  display: flex;
+  min-height: 0;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  padding: 28px 16px 40px;
+}
+
+.app-shell--computer-use {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.computer-use-section {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  flex: 1;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 24px clamp(16px, 3vw, 40px) 40px;
+}
+
+.computer-use-content {
+  width: 100%;
+  max-width: 1480px;
+  min-height: calc(100vh - 64px);
+  flex: 1;
+  margin: 0 auto;
+}
+
+.computer-use-content .calendar-app {
+  min-height: calc(100vh - 64px);
+  padding: 0;
+}
+
+.preview-caption {
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+.preview-caption h2 {
+  font-size: 16px;
+  font-weight: 650;
+}
+
+.preview-caption p {
+  margin: 5px 0 0;
+  color: #68758b;
+  font-size: 12px;
+}
+
+.device-stage {
+  display: flex;
+  max-width: 100%;
+  justify-content: center;
+  overflow: auto;
+  padding: 4px 10px 18px;
+}
+
+device-frame {
+  --device-frame-background: #202635;
+  --device-frame-shadow: 0 26px 64px rgba(27, 39, 61, 0.22);
+  --device-screen-background: #f9fafc;
+  flex: 0 0 auto;
+}
+
+.device-content {
+  display: flex;
+  height: 100%;
+  min-height: 100%;
+  flex-direction: column;
+  gap: 24px;
+  overflow-y: auto;
+  padding: 28px 20px 24px;
+  background: #f9fafc;
+  color: #17202f;
+}
+
+.device-app-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.app-mark {
+  display: grid;
+  width: 40px;
+  height: 40px;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 13px;
+  background: #263d69;
+  color: white;
+  font-size: 18px;
+  font-weight: 750;
+}
+
+.device-app-header h2 {
+  font-size: 15px;
+  letter-spacing: -0.02em;
+}
+
+.foundation-card {
+  border: 1px solid #e1e6ef;
+  border-radius: 18px;
+  padding: 17px;
+  background: white;
+  box-shadow: 0 8px 24px rgba(26, 43, 72, 0.05);
+}
+
+.card-label {
+  margin-bottom: 10px !important;
+}
+
+.database-status {
+  font-size: 14px;
+  font-weight: 650;
+}
+
+.schema-version {
+  margin-top: 8px !important;
+  color: #68758b;
+  font-size: 12px;
+}
+
+.empty-state {
+  margin: auto 6px;
+  color: #7b879a;
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .app-header {
+    padding: 18px 16px;
+  }
+
+  .app-header h1 {
+    font-size: 17px;
+  }
+
+  .preview-section {
+    padding-top: 20px;
+  }
+}

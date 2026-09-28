@@ -1,0 +1,28 @@
+{
+  "format": "dental-tech-calendar",
+  "dataset": "pricing",
+  "formatVersion": 1,
+  "fixture": true,
+  "items": [
+    { "id": "demo-price-001", "name": "Коронка циркониевая", "calculationMode": "PER_UNIT", "unitPrice": 14000, "active": true, "metadata": { "category": "Коронки" } },
+    { "id": "demo-price-002", "name": "Коронка циркониевая на импланте", "calculationMode": "PER_UNIT", "unitPrice": 19000, "active": true, "metadata": { "category": "Имплантация" } },
+    { "id": "demo-price-003", "name": "Коронка металлокерамическая", "calculationMode": "PER_UNIT", "unitPrice": 9500, "active": true, "metadata": { "category": "Коронки" } },
+    { "id": "demo-price-004", "name": "Коронка E.max", "calculationMode": "PER_UNIT", "unitPrice": 15000, "active": true, "metadata": { "category": "Коронки" } },
+    { "id": "demo-price-005", "name": "Винир керамический", "calculationMode": "PER_UNIT", "unitPrice": 18000, "active": true, "metadata": { "category": "Виниры" } },
+    { "id": "demo-price-006", "name": "Коронка временная PMMA", "calculationMode": "PER_UNIT", "unitPrice": 3000, "active": true, "metadata": { "category": "Временные конструкции" } },
+    { "id": "demo-price-007", "name": "Звено моста циркониевое", "calculationMode": "PER_UNIT", "unitPrice": 13500, "active": true, "metadata": { "category": "Мостовидные конструкции" } },
+    { "id": "demo-price-008", "name": "Вкладка керамическая", "calculationMode": "PER_UNIT", "unitPrice": 12000, "active": true, "metadata": { "category": "Вкладки" } },
+    { "id": "demo-price-009", "name": "Накладка керамическая", "calculationMode": "PER_UNIT", "unitPrice": 12500, "active": true, "metadata": { "category": "Накладки" } },
+    { "id": "demo-price-010", "name": "Моделировка воском", "calculationMode": "PER_UNIT", "unitPrice": 3500, "active": true, "metadata": { "category": "Моделировка" } },
+    { "id": "demo-price-011", "name": "Полный съемный протез акриловый", "calculationMode": "FIXED", "fixedPrice": 28000, "active": true, "metadata": { "category": "Съемные протезы" } },
+    { "id": "demo-price-012", "name": "Частичный съемный протез акриловый", "calculationMode": "FIXED", "fixedPrice": 23000, "active": true, "metadata": { "category": "Съемные протезы" } },
+    { "id": "demo-price-013", "name": "Протез гибкий", "calculationMode": "FIXED", "fixedPrice": 35000, "active": true, "metadata": { "category": "Съемные протезы" } },
+    { "id": "demo-price-014", "name": "Каркас бюгельного протеза", "calculationMode": "FIXED", "fixedPrice": 22000, "active": true, "metadata": { "category": "Съемные протезы" } },
+    { "id": "demo-price-015", "name": "Ложка индивидуальная", "calculationMode": "FIXED", "fixedPrice": 2500, "active": true, "metadata": { "category": "Вспомогательные работы" } },
+    { "id": "demo-price-016", "name": "Каппа защитная", "calculationMode": "FIXED", "fixedPrice": 8000, "active": true, "metadata": { "category": "Каппы" } },
+    { "id": "demo-price-017", "name": "Ремонт съемного протеза", "calculationMode": "FIXED", "fixedPrice": 6000, "active": true, "metadata": { "category": "Ремонт" } },
+    { "id": "demo-price-018", "name": "Добавление зуба в съемный протез", "calculationMode": "FIXED", "fixedPrice": 3500, "active": true, "metadata": { "category": "Ремонт" } },
+    { "id": "demo-price-019", "name": "Перебазировка съемного протеза", "calculationMode": "FIXED", "fixedPrice": 9000, "active": true, "metadata": { "category": "Ремонт" } },
+    { "id": "demo-price-020", "name": "Индивидуальный абатмент", "calculationMode": "FIXED", "fixedPrice": 7000, "active": false, "metadata": { "category": "Имплантация", "note": "Неактивная позиция для проверки фильтрации" } }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "@dental-tech/api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@dental-tech/persistence-sqlite": "*",
+    "fastify": "5.12.5"
+  }
+}
